@@ -1,0 +1,88 @@
+Back-end
+
+mdp mongosbd = TjfqkWPo5MRFFN3E
+
+npm init 
+npm i
+npm install mongoose
+npm install nodemon
+//changer dans le package et ajouter start:"node index.js"
+npm insall dotenv
+npm install express
+npm install cors
+//installer rest client extension sur visual
+npm create vite@latest ex1-front-end -- --template react
+------------------------------------------------------------------
+Front-end
+
+npm install axios
+
+creer des dossier : 
+-componenets : y'aura --App.jsx
+-services :  y'aura --persons.js (c'est du javascript et pas react et ca va permettre
+de communiquer avec le back grace a axios qu'on à install)
+//copier un objet on utilise ... ex: ...person la on copie l'objet personne
+
+!!!! pas oublier de mettre dans le main.jsx le <provider> 
+
+-----------------------------------------------------------------------------
+
+note sur les rotage c'est jste un menu pour rediriger vers une autre url
+
+et ca se passe dans app.jsx 
+ il faut installer le rout : 
+npm install react-router-dom
+ on a bsn d'entourer dans notre main.jsx ou dans le module7  c'est dans app.jsx et on entour l' <App> avec notre routeur qui est <Router>
+le apploader est un fichier intremediaire qui va aider à faire le liens on px le mettre juste dans le apploader le <app> entourer du <Router>
+
+useMatch = il va chercher une anecdonne grace à l'id et le renvoyer (verifier si ça match)
+
+useSate = initialiser une valeur
+
+useEffect = pour effectuer des appels réseau, récupérer des données à partir d'une API, et mettre à jour l'état du composant avec ces données.
+
+
+Ant design voir direct dans le module 7 du cours. c'est pour faire jouli
+
+faut faire une installation : npm install antd --save
+--------------------------------------------------------------------------------------------
+
+GraphQL : module 8
+
+tout ça c'est dans le back-end :
+
+installer apollo pour graphql dans l'api (dans le back-end):
+npm install @apollo/client graphql
+ type query : c''est pour definir les procedure / methode / fonction
+ type person : un objet
+ type mutation : set / modifie 
+ edit number : changer nom et le number 
+
+ le resolver : on y trouve la logique et on y trouve qui fait quoi
+
+ les typeDef : c'est juste pour faire la signature / prototype
+
+mtn front-end pour associer le back avec le front en utilisant le GraphQL
+
+on a un fichier query.js ui se trouve à la racine du projet et c'est du javascript 
+et la dedans on va mettre toute les query dont on aura bsn
+
+voir front du module 8 dans le query.js
+pas publier les export pour preciser que c'est bien le graphql
+
+le useQuery = executer la query 
+
+result.data.allAuthors : vu qu'on aime pas son affichage par defaut on l'ecrit nous meme en utilisant cet ligne
+en final on affiche la liste avec une map comme d'hab
+
+modifierAuthors ==> il y a un edit donc une mutation a lieu
+
+!! quand on modifie les donner, le programme ne lecomprend pas donc il faut faire un refresh manuellement 
+mais dcp grace à une ligne refetch.Queries permet de refresh automatiquement.
+et ça permet aussi d'executer une query en meme temps qu'une autre pendant qu'elle est occuper a ses refresh 
+
+
+!! parsInt sert a remplacer un string par un int 
+
+fetch : chercher une liste
+
